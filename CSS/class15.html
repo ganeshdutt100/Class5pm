@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            overflow: hidden;
+            overflow:scroll;
+            overflow:auto;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .text{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            color: white;
+            backdrop-filter: blur(20px);
+            left: 100%;
+            transition: .2s;
+        }
+
+        .card:hover .text{
+            left: 0;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed error consequatur id sit laboriosam qui, ducimus, fuga minima eligendi explicabo non officia voluptatum minus. Repellat nostrum officia voluptates ut debitis sit totam dicta id rem vel voluptatum, nobis cumque ducimus quasi deleniti quaerat aspernatur consectetur, non minus quas? Distinctio quasi ullam cum odit incidunt, neque reiciendis similique eveniet quibusdam quaerat repellendus eum explicabo molestiae? Quae dignissimos, ullam accusamus facere mollitia cumque. Saepe distinctio ullam, eveniet ipsam delectus tenetur recusandae adipisci, ab obcaecati quas error deleniti, voluptatem voluptas ipsa corporis. Asperiores et nesciunt aspernatur ipsam, consectetur, est quibusdam quae natus quo aperiam repellendus rerum ea amet maiores quam voluptatum ducimus nostrum. Doloribus dolore fugit architecto reiciendis velit suscipit, consequatur illum error quia! Unde.
+        </p>
+    </div> -->
+
+
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/portrait-young-person-holding-camera-device-world-photography-day_23-2151609208.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrids" alt="">
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, quo! Asperiores debitis earum, impedit veniam dicta commodi ea, quas nemo reprehenderit, sed recusandae perspiciatis! Perspiciatis, atque. Rerum, ut?
+        </p>
+    </div>
+</body>
+</html>
