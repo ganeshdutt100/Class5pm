@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background:url('https://templates.thememodern.com/architect/images/Slider/1.jpg') ;
+            background-size: cover;
+            width: 100%;
+            height: 600px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            align-items: center;
+            justify-content: center;
+
+   animation : kuchBhi 5s linear infinite
+        }
+        h1{
+            font-size: 55px;
+            margin: 20px;
+            font-family:sans-serif;
+        }
+        p{
+            font-size: 20px;
+            margin: 20px;
+            font-family: sans-serif;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: red;
+            /* color: black; */
+            animation: btn .7s linear infinite;
+        }
+        @keyframes btn {
+            0%{
+                background-color: blue;
+            }
+            50%{
+                background-color: rgb(255, 0, 212);
+            }
+            80%{
+                background-color: rgb(123, 255, 0);
+            }
+            100%{
+                background-color: rgb(255, 0, 0);
+            }
+        }
+       @keyframes kuchBhi {
+          0%{
+            background-image: url('https://templates.thememodern.com/architect/images/Slider/1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          40%{
+             background-image: url('https://img.freepik.com/free-photo/luxurious-villa-with-modern-architectural-design_23-2151694144.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid');
+            background-size: cover;
+            background-repeat: no-repeat;}
+          70%{ 
+            background-image: url('https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004030.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid');
+            background-size: cover;
+            background-repeat: no-repeat;}
+          100%{}
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque pariatur soluta porro quia numquam repellendus voluptate eligendi, blanditiis veritatis veniam error animi adipisci fugiat excepturi facilis autem, ab, alias dignissimos.</p>
+        <div>
+            <button>Button 1</button>
+            <button>Button 1</button>
+        </div>
+      
+    </div>
+</body>
+</html>
