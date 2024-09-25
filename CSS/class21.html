@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+      
+
+        nav{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 24px;
+            /* background-color: #333;
+             */
+             border: 1px solid black;
+             border-radius: 20px;
+        }
+        ul{
+            display: none;
+            gap: 20px;
+            gap: 20px;
+            list-style-type: none;
+        }
+        form{
+            display: none;
+        }
+        form input{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            /* background-color: white; */
+            background-color: #333;
+            color: white;
+        }
+        form button{
+            padding: 10px 8px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        @media only screen  and (min-width: 667px) {
+            .bar{
+    display: none;
+  }
+
+  form{
+    display: block;
+  }
+  
+
+  ul{
+    display: flex;
+  }
+
+        }
+
+        @media only screen and (min-width: 908px) {
+            form{
+    display: block;
+  } 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOgo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Project</li>
+        </ul>
+        <form >
+            <input type="text" size="6">
+            <button>Submit</button>
+        </form>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars-staggered bar"></i>
+        </div>
+    </nav>
+</body>
+</html>
