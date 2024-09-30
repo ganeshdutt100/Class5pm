@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: lightblue;
+         padding: 20px;   
+     
+        }
+        ul{
+            list-style: none;
+            gap: 20px;
+            display: none;
+
+        }
+
+.section1{
+    text-align: center;
+}
+.section1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.section1Text{
+    margin-top: 20px;
+}
+.btn{
+     padding: 10px 20px;
+     background-color: lightblue;
+     color: black;
+     border: none;
+     cursor: pointer;
+     border-radius: 10px;
+     
+}
+.btn:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+
+
+
+
+
+
+        @media only screen and (min-width: 600px) {
+            .bar{
+                display: none;
+            }
+            ul{
+                display: flex;
+            }
+   nav{
+    border-radius: 50px;
+         /* width: 95%; */
+         /* margin-left: 10px; */
+         margin-top: 10px;
+         justify-content: space-around;
+
+   }
+   .section1{
+    display: flex;
+   gap: 20px;
+}
+
+.section1 img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+         <div class="logo">Logo</div>
+         <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+         </ul>
+         <i class="fa-solid fa-bars-staggered bar"></i>
+
+         
+    </nav>
+    <div class="section1">
+        <img src="https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478109.jpg?t=st=1727678191~exp=1727681791~hmac=45fe61650b5643fe3c722ebcbb67e2f3c748c21b0bd3481c9f5fa927f6a9a7d0&w=1060" alt="">
+
+        <div class="section1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure! Facilis, dolore ullam! Harum veritatis corrupti aperiam, cumque nam ducimus velit id cupiditate voluptates, corporis reiciendis. Laudantium, harum blanditiis. Saepe.</p>
+            <button class="btn">button-1</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
