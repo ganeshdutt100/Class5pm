@@ -36,12 +36,13 @@
         ul{
             list-style: none;
             gap: 20px;
-            display: none;
+            display: flex;
 
         }
 
 .section1{
     text-align: center;
+    display: flex;
 }
 .section1 img{
     width: 200px;
@@ -66,73 +67,25 @@
 }
 
 
-
-
-
-
-
-        @media only screen and (min-width: 600px) {
-            .bar{
-                display: none;
-            }
-            ul{
-                display: flex;
-            }
-   nav{
-    border-radius: 50px;
-         /* width: 95%; */
-         /* margin-left: 10px; */
-         margin-top: 10px;
-         justify-content: space-around;
-
-   }
-   .section1{
-    display: flex;
-   gap: 20px;
+.bar{
+    display: none;
 }
 
-.section1 img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+@media only screen and (max-width: 600px) {
+      .bar{
+        display: block;
+      }
+      ul{
+        display: none;
+      }
+
+      .section1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 }
-.section2{
-   flex-direction: row-reverse;  
-   /* display: none; */
-}
 
-.section1Text{
-    margin-top: 100px;
-}
-
-        }
-
-   .image{
-    width: 300px;
-    height: 300px;
-    position: relative;
-
-   }
-        .image img{
-        width: 100%;
-        height: 100%;
-        }
-         .text{
-            position: absolute;
-            top: 100%;
-            left: 50px;
-            transition: .2s linear;
-        }
-
-        .icons {
-            font-size: 40px;
-            color: white;
-            
-        }
-        .image:hover .text{
-            top: 150px;
-            /* left: 0; */
-        }
     </style>
 </head>
 <body>
@@ -165,7 +118,6 @@
     <div class="section1 section2">
         <img src="https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478109.jpg?t=st=1727678191~exp=1727681791~hmac=45fe61650b5643fe3c722ebcbb67e2f3c748c21b0bd3481c9f5fa927f6a9a7d0&w=1060" alt="">
 
-      
         <div class="section1Text ">
             <h3>Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure! Facilis, dolore ullam! Harum veritatis corrupti aperiam, cumque nam ducimus velit id cupiditate voluptates, corporis reiciendis. Laudantium, harum blanditiis. Saepe.</p>
@@ -173,12 +125,6 @@
         </div>
     </div>
 
-    <div class="image">
-        <img src="https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478109.jpg?t=st=1727678191~exp=1727681791~hmac=45fe61650b5643fe3c722ebcbb67e2f3c748c21b0bd3481c9f5fa927f6a9a7d0&w=1060" alt="">
-        <div class="text">
-            <i class="fa-solid fa-cart-shopping icons"></i>
-            <i class="fa-brands fa-searchengin icons"></i>
-        </div>
-    </div>
+  
 </body>
 </html>
