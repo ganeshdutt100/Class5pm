@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .list{
+            display: none;
+            gap: 20px;
+        }
+
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+        ul li a{
+            color: white;
+            text-decoration: none;
+        }
+       .bar{
+        display: block;
+       }
+
+       header{
+        display: flex;
+        justify-content: space-around;
+       }
+       .para{
+        display: none;
+       }
+       .list1{
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+       }
+  @media only screen and (min-width: 600px) {
+    .bar{
+        display: none;
+    }
+    .list{
+        display: flex;
+    }
+    .para{
+        display: flex;
+    }
+  }
+  .backgrounColor{
+    width: 300px;
+    position: relative;
+    background-image: url('https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid');
+
+  }
+  .image img{
+    width: 100%;
+    opacity: 0;
+    
+  }
+  .para{
+    position: absolute;
+    top: 0;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icons1">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-house"></i>
+
+        </div>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+        <div class="list1">
+            <li>Contact</li>
+            <li>Cart</li>
+            <li>Login</li>
+        </div>
+    </header>
+     <nav>
+        <div class="logo">Logo</div>
+          <div class="list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Login</a></li>
+                
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-house"></i>
+            </div>
+
+           
+          </div>
+         
+            <i class="fa-solid fa-bars bar"></i>
+      
+     </nav>
+
+     <div class="backgrounColor">
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="">
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In quidem asperiores similique porro cumque alias recusandae nesciunt, quibusdam ad! Consequatur aliquam explicabo dolore fuga ipsa nam, blanditiis hic esse perspiciatis.</p>
+        </div>
+     </div>
+
+     <marquee behavior="" direction="">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+        <img src="https://img.freepik.com/free-photo/happy-excited-tourist-shooting-landmarks_1262-18852.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid" alt="" width="300px">
+     </marquee>
+</body>
+</html>

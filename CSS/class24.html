@@ -70,21 +70,20 @@
 .bar{
     display: none;
 }
-
-@media only screen and (max-width: 600px) {
-      .bar{
-        display: block;
-      }
-      ul{
+@media only screen and (max-width:500px) {
+    ul{
         display: none;
-      }
-
-      .section1{
+    }
+    .bar{
+        display: block;
+    }
+    .section1{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-      }
+    }
 }
+
 
     </style>
 </head>
