@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <style>
+        .iconHome{
+             font-size: 20px;
+             color: #343a40;
+             transition: color 0.3s;
+             border-radius: 50%;
+             border: 1px solid #343a40;
+             padding: 10px;
+        }
+        .iconHome:hover{
+            
+        }
+        .card{
+            transition: all .3s;
+            margin-bottom: 10px;
+        }
+        .card:hover{
+             
+             box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.1);
+             cursor: pointer;
+        }
+
+        .card:hover .iconHome{
+            color: #f8312f;
+            border: 1px solid #f8312f;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav
+        class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top "
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            >Home
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+             
+            </div>
+        </div>
+    </nav>
+     
+     <!-- ========== Start Section-1 ========== -->
+
+     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="1"
+                aria-label="Second slide"
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="2"
+                aria-label="Third slide"
+            ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img
+                    src="../image/React.png"
+                    class="w-100 d-block" height="400px"
+                    alt="First slide"
+                />
+                <div class="carousel-caption d-none d-md-block" >
+                    <h3 style="margin-top: -200px;">Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo nemo saepe facere quia! Impedit eius in et deleniti tempore illo distinctio obcaecati sapiente, quaerat, labore quibusdam libero consequatur? Voluptatum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="../image/React.png"
+                    class="w-100 d-block" height="400px"
+                    alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="../image/React.png"
+                    class="w-100 d-block" height="400px"
+                    alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+     </div>
+     
+     
+     <!-- ========== End Section-1 ========== -->
+
+     <!-- ========== Start Section-2 ========== -->
+     
+     <div class="container mt-5">
+        <h1 class="text-center">section2</h1>
+        <div class="empty mx-auto bg-danger" style="width: 100px; height: 2px;"></div>
+        <div class="row justify-content-center  mt-5">
+            <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+                
+                <div class="card justify-content-center text-center"  >
+                    <div class="card-body">
+                        <i class="fa-solid fa-house iconHome "></i>
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+                
+                <div class="card justify-content-center text-center" >
+                    <div class="card-body">
+                        <i class="fa-solid fa-house iconHome "></i>
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+                
+                <div class="card justify-content-center text-center" >
+                    <div class="card-body">
+                        <i class="fa-solid fa-house iconHome "></i>
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+                
+                <div class="card justify-content-center text-center" >
+                    <div class="card-body">
+                        <i class="fa-solid fa-house iconHome "></i>
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </div>
+     <!-- ========== End Section-2 ========== -->
+
+
+     <!-- ========== Start Section-3 ========== -->
+     
+     <div class="contianer my-5" style="background-color: rgb(231, 240, 243);">
+        <h1 class="text-center">section3</h1>
+        <div class="empty mb-3 mx-auto bg-danger" style="width: 100px; height: 2px;"></div>
+        <div class="row ">
+            <div class="col col-12 col-lg-5">
+                <img src="../image/wallpaper.jpg" alt="" class="img-fluid rounded-5">
+            </div>
+            <div class="col col-12 col-lg-7">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi recusandae, obcaecati </p>
+                <ul class="list-unstyled">
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                </ul>
+            </div>
+        </div>
+     </div>
+     <!-- ========== End Section-3 ========== -->
+
+
+     
+     
+     <div class="contianer my-5" style="background-color: rgb(231, 240, 243);">
+        <h1 class="text-center">section3</h1>
+        <div class="empty mb-3 mx-auto bg-danger" style="width: 100px; height: 2px;"></div>
+        <div class="row ">
+            <div class="col col-12 col-lg-5 order-1 position-relative">
+                <img src="../image/wallpaper.jpg" alt="" class="img-fluid rounded-5  ">
+                <div class="iconPlayVideo position-absolute top-50 start-50">
+                    <i class="fa-solid fa-play fs-2 p-3  rounded-circle text-bg-primary "></i>
+                </div>
+
+            </div>
+            <div class="col col-12 col-lg-7 order-0">
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi recusandae, obcaecati </p>
+                <ul class="list-unstyled">
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                    <li> ✔️ Lorem ipsum dolor, sit Lorem ipsum dolor sit amet. amet consectetur</li>
+                </ul>
+            </div>
+        </div>
+     </div>
+     <!-- ========== End Section-3 ========== -->
+
+
+
+
+     
+     <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+     
+</body>
+</html>
