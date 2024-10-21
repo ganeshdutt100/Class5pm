@@ -103,3 +103,8 @@ document.writeln(fun2(a, b));
 // document.writeln(callingFun2);
 
 // fun2();
+
+let a11 = 4;
+let a12 = "45";
+
+document.writeln(a11 + a12);
