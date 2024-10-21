@@ -11,17 +11,54 @@
     <button>Mul</button>
     <button>Div</button>
 
+    <button onclick="fun() ">btn</button>
+
     <script>
-      let a = 23;
-      let b = 28;
+      function fun() {
+        console.log("I am clicked");
+      }
+      //   let name = "Dipak";
+      //   let age = 22;
+      //   let city = "Dehradun";
+      //   let country = "India";
+      //   let color = "koi bhi ";
 
-      //   a = a + 20;
-      a += 20;
-      a -= 20;
-      a *= 20;
-      a /= 20;
+      //   document.writeln(
+      //     name + "  " + age + " " + city + " " + country + " " + color
+      //   );
 
+      let obj = {
+        name: "Dipak",
+        city: "Dehradun",
+        country: "India",
+        age: 22,
+        color: "koi bhi",
+        // course: "Java Fullstack",
+      };
+
+      document.writeln(obj);
+      console.log(obj);
+
+      let a = [1, "Name", 34];
       document.writeln(a);
+
+      let currentDate = new Date();
+      document.writeln(currentDate);
+
+      //   let c = null;
+      //   //   console.log(c);
+      //   document.writeln(c);
+
+      //   let a = 23;
+      //   let b = 28;
+
+      //   //   a = a + 20;
+      //   a += 20;
+      //   a -= 20;
+      //   a *= 20;
+      //   a /= 20;
+
+      //   document.writeln(a);
 
       //   document.writeln(a && b);
 
