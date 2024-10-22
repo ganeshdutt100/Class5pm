@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #demo {
+        color: red;
+      }
+    </style>
   </head>
   <body>
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
+
+    <p id="trainer">I am a Trainer</p>
+    <button onclick="fun()">Click me</button>
     <script>
+      //
+
+      function fun() {
+        document.getElementById("trainer").innerText = "I am a Ganesh dutt";
+      }
       //   let a = 5;
       //   let b = 5;
 
@@ -34,49 +48,49 @@
 
       //   document.writeln(b);
 
-      let dataSpeed = 2;
-      let student = 2;
+      //   let dataSpeed = 2;
+      //   let student = 2;
 
-      if (dataSpeed == 2) {
-        document.writeln("Data Speed is 2 MBps");
-        if (student >= 4) {
-          document.writeln("Class");
-        } else {
-          document.writeln("not class");
-        }
-      } else {
-        document.writeln("Error Data Speed");
-      }
+      //   if (dataSpeed == 2) {
+      //     document.writeln("Data Speed is 2 MBps");
+      //     if (student >= 4) {
+      //       document.writeln("Class");
+      //     } else {
+      //       document.writeln("not class");
+      //     }
+      //   } else {
+      //     document.writeln("Error Data Speed");
+      //   }
 
-      document.writeln("<br>");
+      //   document.writeln("<br>");
 
-      let weekDay = 8;
-      switch (weekDay) {
-        case 1:
-          document.writeln("Mon");
-          break;
-        case 2:
-          document.writeln("Tue");
-          break;
-        case 3:
-          document.writeln("Wed");
-          break;
-        case 4:
-          break;
-          document.writeln("Thur");
-        case 5:
-          document.writeln("Fri");
-          break;
-        case 6:
-          document.writeln("Sat");
-          break;
-        case 7:
-          document.writeln("Sun");
-          break;
-        default:
-          document.writeln("Error");
-          break;
-      }
+      //   let weekDay = 8;
+      //   switch (weekDay) {
+      //     case 1:
+      //       document.writeln("Mon");
+      //       break;
+      //     case 2:
+      //       document.writeln("Tue");
+      //       break;
+      //     case 3:
+      //       document.writeln("Wed");
+      //       break;
+      //     case 4:
+      //       break;
+      //       document.writeln("Thur");
+      //     case 5:
+      //       document.writeln("Fri");
+      //       break;
+      //     case 6:
+      //       document.writeln("Sat");
+      //       break;
+      //     case 7:
+      //       document.writeln("Sun");
+      //       break;
+      //     default:
+      //       document.writeln("Error");
+      //       break;
+      //   }
     </script>
   </body>
 </html>
