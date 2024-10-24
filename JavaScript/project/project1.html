@@ -17,9 +17,9 @@
     <input type="text" placeholder="Enter your Second number" id="num2" />
     <br />
 
+    <!-- <h3 id="output">Loading....</h3> -->
+    <input type="text" id="output" readonly placeholder="loading..." /> <br />
     <button onclick="fun()">Click me</button>
-
-    <h3 id="output">Loading....</h3>
 
     <script>
       function fun() {
@@ -49,7 +49,7 @@
             alert("Invalid operator");
             break;
         }
-        document.getElementById("output").innerText = result;
+        document.getElementById("output").value = result;
       }
     </script>
   </body>
