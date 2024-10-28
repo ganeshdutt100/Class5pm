@@ -40,14 +40,38 @@
       //   };
       //   arrowFunction();
 
-      function fun() {
-        console.log("Normal function");
+      //   function fun() {
+      //     console.log("Normal function");
+      //   }
+      //   fun();
+
+      //   let a = () => console.log("Arrow function");
+
+      //   a();
+
+      //   function greet(name) {
+      //     console.log("Hello " + name);
+      //   }
+      //   greet.call(null, "Dipak");
+
+      function Emp(id, name) {
+        this.id = id;
+        this.name = name;
       }
-      fun();
 
-      let a = () => console.log("Arrow function");
+      function Dipak(id, name) {
+        Emp.call(this, id, name);
+      }
+      function Yash(id, name) {
+        Emp.call(this, id, name);
+      }
 
-      a();
+      let DipakEmp = new Dipak(12, "Dipak Kumar ");
+
+      let yashEmp = new Yash(82, "yash Singhal ");
+
+      console.log(DipakEmp);
+      console.log(yashEmp);
     </script>
   </body>
 </html>
