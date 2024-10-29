@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Emp(id, name) {
+        this.id = id;
+        this.name = name;
+      }
+      function PermanentEmp(id, name, salary) {
+        this.salary = salary;
+        Emp.call(this, id, name);
+      }
+      function TemporaryEmp(id, name) {
+        Emp.call(this, id, name);
+      }
+
+      let PEmp = new PermanentEmp(1, "Ganesh dutt", 1222222222);
+      let TEmp = new TemporaryEmp(2, "motu");
+
+      document.writeln(PEmp.id + " " + PEmp.name + " " + PEmp.salary + "<br>");
+      document.writeln(TEmp.id + " " + TEmp.name + "<br>");
+
+      var arr = [5, 7, 3, 2];
+
+      let max = Math.max.apply(this, arr);
+      document.writeln(max);
+
+      let min = Math.min.apply(this, arr);
+      document.writeln(min);
+
+      //   document.writeln(PEmp.name);
+    </script>
+  </body>
+</html>
