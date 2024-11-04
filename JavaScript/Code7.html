@@ -13,22 +13,54 @@
       //   document.writeln();
       //   console.log();
 
-      for (let a = 0; a <= 10; a++) {
-        document.writeln(a + " :  Sorry" + "<br>");
+      //   for (let a = 0; a <= 10; a++) {
+      //     document.writeln(a + " :  Sorry" + "<br>");
+      //   }
+      //   document.writeln("<br>");
+
+      //   for (let a = 10; a >= 0; a--) {
+      //     document.writeln(a + " :  Sorry" + "<br>");
+      //   }
+
+      //   for (let a = 0; a <= 10; a++) {
+      //     if (a % 2 === 0) {
+      //       document.writeln(a + " :  Even" + "<br>");
+      //     } else {
+      //       document.writeln(a + " :  Odd" + "<br>");
+      //     }
+      //   }
+
+      let i = 0;
+      while (i <= 5) {
+        document.writeln(i);
+        i++;
       }
       document.writeln("<br>");
 
-      for (let a = 10; a >= 0; a--) {
-        document.writeln(a + " :  Sorry" + "<br>");
+      let j = 10;
+      do {
+        document.writeln(j);
+        j++;
+      } while (j <= 5);
+
+      document.writeln("<br>");
+
+      let obj = {
+        name: "John",
+        age: 30,
+        city: "New York",
+        Mobile: 123433232323,
+      };
+
+      //   document.writeln(obj.name);
+      for (let a in obj) {
+        document.writeln(a + " :  " + obj[a] + "<br>");
+        // document.writeln(a);
       }
 
-      for (let a = 0; a <= 10; a++) {
-        if (a % 2 === 0) {
-          document.writeln(a + " :  Even" + "<br>");
-        } else {
-          document.writeln(a + " :  Odd" + "<br>");
-        }
-      }
+      //   do{
+      //     // stm
+      //   } while(condtion)
     </script>
   </body>
 </html>
