@@ -6,15 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    2 <sup>4</sup> =
+    <!-- 2 <sup>4</sup> = -->
     <script>
-      let base = 2;
-      let power = 4;
-      let result = 1;
-      for (let i = 1; i <= power; i++) {
-        result *= base;
-      }
-      document.writeln(result);
+      // let base = 2;
+      // let power = 4;
+      // let result = 1;
+      // for (let i = 1; i <= power; i++) {
+      //   result *= base;
+      // }
+      // document.writeln(result);
 
       // let sum = 0;
       // for (let a = 1; a <= 10; a++) {
@@ -32,8 +32,26 @@
       //   fact = fact * a;
       // }
       // document.writeln(fact);
+
+      const computerNum = Math.floor(Math.random() * 4) + 1;
+      // document.writeln(num);
+
+      let attempts = 0;
+      let userNum = prompt("Please enter guess number (1 to 5)");
+
+      if (userNum == computerNum) {
+        document.writeln("user win");
+      } else if (userNum > computerNum) {
+        document.writeln(" computer number is smaller" + computerNum);
+      } else if (userNum < computerNum) {
+        document.writeln(" computer number is larger" + computerNum);
+      }
+      // console.log(num);
     </script>
   </body>
 </html>
 
+<!-- 0 - 1 = .7876, .877 -->
+<!-- 0 - 3 = .7876, .877 -->
 <!-- 9999 * 9998 * 9997 -->
+<!-- n-1 = 3-1 = 2 -->
