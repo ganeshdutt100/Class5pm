@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        /* border: 1px solid #ccc; */
+        transition: border-color 0.3s ease;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Guess the number</h1>
+    <input type="text" id="guess" />
+
+    <button onclick="guessNumber()">Guess</button>
+
+    <p id="result">Loading..</p>
+    <script>
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      let count = 0;
+
+      function guessNumber() {
+        let userInput = document.getElementById("guess").value;
+
+        if (userInput < 0 || userInput > 10) {
+          alert("this is wrong number or invalid");
+        }
+        count++;
+        if (userInput == randomNumber) {
+          document.getElementById("result").innerHTML =
+            "Congratulations! You guessed the number in" + count + " attempts";
+        } else if (userInput < randomNumber) {
+          document.getElementById("result").textContent = "Too low! Try again";
+        } else if (userInput > randomNumber) {
+          document.getElementById("result").textContent = "Too high! Try again";
+        }
+
+        if (count > 6) {
+          document.getElementById("result").innerHTML = "you fail";
+        }
+      }
+      //   document.writeln(randomNumber);
+    </script>
+  </body>
+</html>
