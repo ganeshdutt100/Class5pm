@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .para {
+        font-size: 20px;
+        color: blue;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        background-color: lightgray;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 90px 20px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transform: rotate(30deg);
+        transition: transform 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="demo">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quo
+      incidunt labore quia ducimus nulla reiciendis ex, voluptates ullam ipsum
+      maxime ut architecto eveniet exercitationem! Excepturi maiores ad
+      laboriosam illum.
+    </p>
+
+    <script>
+      //   document.getElementById("demo").innerHTML = "hello world!";
+
+      let Demo = document.querySelector(".demo");
+      //   para.style.background = "red";
+      //   para.innerHTML = "Hello  World!";
+
+      Demo.classList.add("para");
+    </script>
+  </body>
+</html>
