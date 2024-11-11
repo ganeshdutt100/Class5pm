@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: gray;
+        color: white;
+      }
+      input {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="dataEntry" placeholder="Enter here.." />
+      <button onclick="Calculator(this.form); return false">Click me</button>
+      <br />
+      <br />
+
+      <input type="text" id="Result" placeholder="loading...." />
+    </form>
+
+    <script>
+      let result = document.getElementById("Result");
+
+      function Calculator(form) {
+        result.value = eval(form.dataEntry.value);
+      }
+    </script>
+  </body>
+</html>
