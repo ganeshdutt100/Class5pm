@@ -43,8 +43,8 @@
     </style>
   </head>
   <body>
-    <form action="">
-      <input type="text" />
+    <form action="" onsubmit="return false">
+      <input type="text" class="result" />
       <button>1</button>
       <button>2</button>
       <button>3</button>
@@ -55,11 +55,37 @@
       <button>8</button>
       <button>9</button>
       <button>0</button>
+      <button class="clr">clr</button>
       <button>+</button>
       <button>-</button>
       <button>*</button>
       <button>/</button>
       <button>=</button>
     </form>
+    <script>
+      let clr = document.querySelector(".clr");
+
+      let btn = document.querySelectorAll("button");
+      // console.log(btn);
+      btn.forEach((functionBtn) => {
+        functionBtn.addEventListener("click", function () {
+          let input = document.querySelector(".result");
+          if (this.innerText === "=") {
+            input.value = eval(input.value);
+          } else {
+            input.value += this.innerText;
+          }
+
+          if (input.value === "clr ") {
+            input.value = "";
+            // clr.innerText = "clr";
+          }
+
+          // alert("Clicked" + "   :  " + this.innerText);
+        });
+      });
+
+      // addEventListener('click', function() \);
+    </script>
   </body>
 </html>
