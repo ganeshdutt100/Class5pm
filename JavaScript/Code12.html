@@ -56,6 +56,7 @@
       <button>9</button>
       <button>0</button>
       <button class="clr">clr</button>
+      <button class="del">🧹</button>
       <button>+</button>
       <button>-</button>
       <button>*</button>
@@ -64,6 +65,9 @@
     </form>
     <script>
       let clr = document.querySelector(".clr");
+      let del = document.querySelector(".del");
+
+      // let input = document.querySelect()
 
       let btn = document.querySelectorAll("button");
       // console.log(btn);
@@ -72,13 +76,12 @@
           let input = document.querySelector(".result");
           if (this.innerText === "=") {
             input.value = eval(input.value);
+          } else if (this.textContent === "clr") {
+            input.value = "";
+          } else if (this.innerText === "🧹") {
+            input.value = input.value.slice(0, -1);
           } else {
             input.value += this.innerText;
-          }
-
-          if (input.value === "clr ") {
-            input.value = "";
-            // clr.innerText = "clr";
           }
 
           // alert("Clicked" + "   :  " + this.innerText);
