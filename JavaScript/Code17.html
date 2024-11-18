@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        name: "xyz",
+        age: 25,
+        DOB: "10-10-10",
+        job: "Developer",
+        address: "Dehradun",
+        phoneNumber: "xxxxxxxxx",
+        Data: "1k",
+      };
+
+      document.writeln(
+        "Name : " + person.name + "<br>" + "Job : " + person.job
+      );
+
+      document.writeln("<br>");
+
+      for (let x in person) {
+        document.writeln(x + " :  " + person[x] + "<br>");
+      }
+
+      //   console.log(person);
+    </script>
+  </body>
+</html>
