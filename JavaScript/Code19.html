@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let person = {
+        age: 23,
+        name: "john",
+      };
+      let obj2 = Object.freeze(person);
+      person.name = "JSON";
+      console.log(person);
+
+      console.log(Object.isFrozen(person));
+    </script>
+  </body>
+</html>
