@@ -11,11 +11,45 @@
         age: 23,
         name: "john",
       };
-      let obj2 = Object.freeze(person);
-      person.name = "JSON";
+
+      const valueObj = Object.values(person);
+      console.log(valueObj); // [23, "john"]
+
       console.log(person);
 
-      console.log(Object.isFrozen(person));
+      //   const obj2 = Object.seal(person);
+      //   person.name = "JSON";
+      //   person.a = "hello";
+      //   console.log(Object.isSealed(person));
+
+      //   console.log(Object.isExtensible(person));
+      //   //   Object.seal(person);
+      //   Object.seal(person);
+      //   console.log(Object.isExtensible(person));
+
+      //   person.job = "Develoeper ";
+
+      //   person.add = "dehradun";
+
+      //   console.log(person);
+
+      //   Object.preventExtensions(person);
+      //   console.log(Object.isExtensible(person));
+
+      //   let obj2 = Object.freeze(person);
+      //   person.name = "JSON";
+      //   console.log(person);
+
+      //   console.log(Object.isFrozen(person));
+
+      //   console.log(Object.is(4, 5));
+      //   console.log(Object.is("STR", "str"));
+      //   console.log(Object.is(null, null));
+      //   console.log(Object.is(undefined, undefined));
+      //   console.log(Object.is(0, -0));
+      //   console.log(Object.is(NaN, NaN));
+      //   console.log(Object.is({}, {}));
+      //   console.log(Object.is([], []));
     </script>
   </body>
 </html>
