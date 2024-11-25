@@ -26,11 +26,19 @@
       //   function greet(name) {
       //     console.log("Hello " + name);
       //   }
+
       //   setTimeout(greet, 5000, "Ganesh");
-      let a = prompt("Enter your name ");
-      setTimeout(function () {
-        console.log("Hello  : " + a);
-      }, 3000);
+      //   let a = prompt("Enter your name ");
+      //   setTimeout(function () {
+      //     console.log("Hello  : " + a);
+      //   }, 3000);
+
+      //   setInterval(function , time(ms),arg)
+
+      setInterval(function () {
+        let dateTime = new Date();
+        console.log(dateTime.toLocaleTimeString());
+      }, 1000);
     </script>
   </body>
 </html>
