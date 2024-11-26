@@ -6,14 +6,42 @@
     <title>Document</title>
   </head>
   <body>
+    <button onclick="goBack()">←</button>
+    <button onclick="goForward()">→</button> <br />
+    <a
+      href="https://www.youtube.com/watch?v=Z-MmmvhQbUg&list=RDTFr6G5zveS8&index=2"
+      >Songs</a
+    >
+
     <script>
-      console.log("Navigator Object");
-      console.log(navigator.appName);
-      console.log(navigator.appName); // Netscape or Microsoft Internet Explorer
-      console.log(navigator.appVersion); // Version of the browser
-      console.log(navigator.language); // Language of the browser
-      console.log(navigator.platform); // Platform of the browser
-      console.log(navigator.userAgent); // User agent string of the browser
+      function goBack() {
+        history.back();
+      }
+      function goForward() {
+        history.forward();
+      }
+
+      //   console.log("Navigator Object");
+      //   console.log(navigator.appName);
+      //   console.log(navigator.appName); // Netscape or Microsoft Internet Explorer
+      //   console.log(navigator.appVersion); // Version of the browser
+      //   console.log(navigator.language); // Language of the browser
+      //   console.log(navigator.platform); // Platform of the browser
+      //   console.log(navigator.userAgent); // User agent string of the browser
+
+      //   console.log(navigator.cookieEnabled ? "true" : "false");
+      //   console.log(navigator.onLine ? "true" : "false");
+
+      //   screen Object
+
+      //   console.log(screen.width);
+      //   console.log(screen.availWidth);
+      //   console.log(screen.height);
+      //   console.log(screen.availHeight);
+      //   console.log(screen.colorDepth);
+      //   console.log(screen.pixelDepth);
+
+      //    History Object
     </script>
   </body>
 </html>
