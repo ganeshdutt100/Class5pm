@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action=""></form> -->
+    <script>
+      //   let a = "password";
+      //   let b = "Password";
+      //   if (a === b) {
+      //     alert("Passwords match");
+      //   } else {
+      //     alert("Passwords do not match");
+      //   }
+      //   let example = /hello/g;
+      //   let a = "hello hello world hello";
+
+      //   let b = a.replace(example, "hy");
+      //   document.writeln(a);
+      //   console.log(b);
+
+      function validatePassword(password) {
+        const minLength = 8;
+        const maxLength = 16;
+        // Regular expressions for validation
+        const hasUppercase = /[A-Z]/;
+        const hasLowercase = /[a-z]/;
+        const hasNumber = /[0-9]/;
+        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/;
+        // Validation checks
+        if (password.length < minLength || password.length > maxLength) {
+          return "Password must be between  8  and 16 characters.";
+        }
+        if (!hasUppercase.test(password)) {
+          return "Password must contain at least one uppercase letter.";
+        }
+        if (!hasLowercase.test(password)) {
+          return "Password must contain at least one lowercase letter.";
+        }
+        if (!hasNumber.test(password)) {
+          return "Password must contain at least one number.";
+        }
+
+        if (!hasSpecialChar.test(password)) {
+          return "Password must contain at least one special character.";
+        }
+
+        return "Password is Valid ";
+      }
+
+      // Example usage
+      let password = "1@#Password";
+      //   let password = "P@ssw0rd123!";
+      let result = validatePassword(password);
+      console.log(result);
+    </script>
+  </body>
+</html>
