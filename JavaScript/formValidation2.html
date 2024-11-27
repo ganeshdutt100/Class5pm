@@ -7,6 +7,15 @@
   </head>
   <body>
     <!-- <form action=""></form> -->
+
+    <form id="passwordForm">
+      <label for="password">Enter Password:</label>
+
+      <input type="password" id="password" name="password" required /> <br />
+      <button type="button" onclick="checkPassword()">Validate</button>
+      <p id="message"></p>
+    </form>
+
     <script>
       //   let a = "password";
       //   let b = "Password";
@@ -52,10 +61,16 @@
       }
 
       // Example usage
-      let password = "1@#Password";
+      //   let password = "1@#Password";
       //   let password = "P@ssw0rd123!";
-      let result = validatePassword(password);
-      console.log(result);
+      //   let result = validatePassword(password);
+      //   console.log(result);
+
+      function checkPassword() {
+        let password = document.getElementById("password").value;
+        let result = validatePassword(password);
+        document.getElementById("message").textContent = result;
+      }
     </script>
   </body>
 </html>
