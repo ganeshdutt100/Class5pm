@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fun(result) {
+        console.log(result);
+      }
+
+      let promise = new Promise(function (a, b) {
+        let x = 10;
+
+        if (x > 30) {
+          a("Success");
+        } else {
+          b("Failed");
+        }
+      });
+
+      promise.then(
+        // 1
+        function (resolve1) {
+          fun(resolve1);
+        },
+        // 2
+        function (reject1) {
+          fun(reject1);
+        }
+      );
+
+      //   let myPromise = new promise((resolve, reject) => {});
+
+      //   new promise(function (resolve, reject) {});
+
+      //   fun1()
+      //   fun2()
+      //   fun3()
+      //   fun4()
+      //   fun5()
+    </script>
+  </body>
+</html>
