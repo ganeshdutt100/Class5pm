@@ -12,7 +12,7 @@
       }
 
       let promise = new Promise(function (a, b) {
-        let x = 10;
+        let x = 50;
 
         if (x > 30) {
           a("Success");
@@ -21,16 +21,19 @@
         }
       });
 
-      promise.then(
-        // 1
-        function (resolve1) {
-          fun(resolve1);
-        },
-        // 2
-        function (reject1) {
-          fun(reject1);
-        }
-      );
+      //   promise.then(
+      //     // 1
+      //     function (resolve1) {
+      //       fun(resolve1);
+      //     }
+      //     // 2
+      //     // function (reject1) {
+      //     //   fun(reject1);
+      //     // }
+      //   )
+      promise
+        .then((value) => console.log(value))
+        .catch((err) => console.log(err));
 
       //   let myPromise = new promise((resolve, reject) => {});
 
