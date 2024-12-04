@@ -14,9 +14,29 @@
           return response.json();
         })
         .then((data) => {
-          console.log(data);
+          for (let a in data) {
+            document.writeln(
+              "UserID :  " +
+                data[a].userId +
+                "<br>" +
+                " id : " +
+                data[a].id +
+                "<br>" +
+                "Title : " +
+                data[a].title +
+                "<br>" +
+                "Body :  " +
+                data[a].body +
+                "<br>" +
+                "<br>"
+            );
+          }
+          //   console.log(data);
+          //   document.writeln(data);
         })
-        .catch((error) => {});
+        .catch((error) => {
+          console.error("Error:", error);
+        });
     </script>
   </body>
 </html>
