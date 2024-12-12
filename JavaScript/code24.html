@@ -136,11 +136,14 @@
 
       inputValue.addEventListener("keydown", function () {
         let textValue = inputValue.value.toLowerCase();
+        console.log(textValue);
+
         let cards = document.querySelectorAll(".card");
 
         cards.forEach((crd) => {
           //    let  text =   crd.textContent.toLowerCase();
           let text = crd.textContent.toLowerCase();
+          console.log(text);
 
           crd.style.display = text.includes(textValue) ? "block" : "none";
         });

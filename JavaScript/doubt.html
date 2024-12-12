@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Events Example</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    Ganesh Dutt
+    <div id="box"></div>
+    <script>
+      const box = document.getElementById("box");
+      box.addEventListener("click", function () {
+        this.style.backgroundColor = "red";
+      });
+      box.addEventListener("mouseover", function () {
+        this.style.opacity = "0.5";
+      });
+      box.addEventListener("mouseout", function () {
+        this.style.opacity = "1";
+      });
+      box.addEventListener("mousedown", function () {
+        this.style.backgroundColor = "red";
+      });
+      box.addEventListener("mouseup", function () {
+        this.style.backgroundColor = "black";
+      });
+    </script>
+  </body>
+</html>
