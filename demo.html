@@ -6,12 +6,12 @@
     <title>Document</title>
   </head>
   <body>
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
     <script>
-      let obj = {
-        name: "John Doe",
-        age: 30,
-        city: "New York",
-      };
+      function App() {
+        document.getElementById("demo").innerHTML = "hello   world";
+      }
+      App(); // invoking the function immediately
     </script>
   </body>
 </html>
