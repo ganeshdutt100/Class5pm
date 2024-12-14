@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import Cards from "./components/Cards";
+import { Hero } from "./components/Hero";
 
 function App() {
   let value =
@@ -21,9 +22,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <Cards title="React with gym" description={value} imgPics={image} />
-      <Cards title="React logo" description={value1} imgPics={image1} />
-      <Cards title="React.js" description={value} imgPics={image} />
+      <div className="d-flex flex-wrap justify-content-center justify-content-lg-around gap-2 mt-3">
+        <Cards title="React with gym" description={value} imgPics={image} />
+        <Cards title="React logo" description={value1} imgPics={image1} />
+        <Cards title="React.js" description={value} imgPics={image} />
+      </div>
+
+      <Hero headingName="React js" heading2="Hello" />
+      <Hero headingName="Hero section" />
+      {/* <Hero /> */}
     </>
   );
 }
