@@ -13,12 +13,17 @@ function App() {
 
   let value1 =
     " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet vel adipisci beatae voluptatem ex modi, minima fuga possimus, magnam velit iste cum harum nulla similique eligendi ratione error. Quaerat.";
+
+  let image =
+    "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid";
+  let image1 =
+    "https://img.freepik.com/premium-vector/big-data-flow-processing-concept-cloud-database_122058-448.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid";
   return (
     <>
       <Navbar />
-      <Cards title="React with gym" description={value} />
-      <Cards title="React logo" description={value1} />
-      <Cards title="React.js" description={value} />
+      <Cards title="React with gym" description={value} imgPics={image} />
+      <Cards title="React logo" description={value1} imgPics={image1} />
+      <Cards title="React.js" description={value} imgPics={image} />
     </>
   );
 }
